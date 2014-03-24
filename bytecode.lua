@@ -38,8 +38,8 @@ local header = function(code) return code:sub(1,18) end
 local lua52 = function(code) return code:sub(1,6) end
 local bigendian =  function(code) return code:byte(7,7)==0 end
 local intlen = function(code) return code:byte(8,8) end
-local instrlen = function(code) return code:byte(9,9) end
-local sizelen = function(code) return code:byte(10,10) end
+local sizelen = function(code) return code:byte(9,9) end
+local instrlen = function(code) return code:byte(10,10) end
 local numlen = function(code) return code:byte(11,11) end
 local usesfloat = function(code) return code:byte(12,12)==0 end
 local tail = function(code) return code:sub(13,18) end
